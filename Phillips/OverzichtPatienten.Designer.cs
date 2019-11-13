@@ -34,7 +34,7 @@
             this.Doctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phonenumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnChange = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +63,7 @@
             this.Patientid.HeaderText = "PatientID";
             this.Patientid.MinimumWidth = 8;
             this.Patientid.Name = "Patientid";
+            this.Patientid.ReadOnly = true;
             this.Patientid.Width = 150;
             // 
             // Naam
@@ -70,6 +71,7 @@
             this.Naam.HeaderText = "Naam";
             this.Naam.MinimumWidth = 8;
             this.Naam.Name = "Naam";
+            this.Naam.ReadOnly = true;
             this.Naam.Width = 150;
             // 
             // Doctor
@@ -77,6 +79,7 @@
             this.Doctor.HeaderText = "Dokter";
             this.Doctor.MinimumWidth = 8;
             this.Doctor.Name = "Doctor";
+            this.Doctor.ReadOnly = true;
             this.Doctor.Width = 150;
             // 
             // email
@@ -84,6 +87,7 @@
             this.email.HeaderText = "E-Mail";
             this.email.MinimumWidth = 8;
             this.email.Name = "email";
+            this.email.ReadOnly = true;
             this.email.Width = 150;
             // 
             // phonenumber
@@ -91,25 +95,27 @@
             this.phonenumber.HeaderText = "Tel. nr.";
             this.phonenumber.MinimumWidth = 8;
             this.phonenumber.Name = "phonenumber";
+            this.phonenumber.ReadOnly = true;
             this.phonenumber.Width = 150;
             // 
-            // button1
+            // BtnChange
             // 
-            this.button1.Location = new System.Drawing.Point(767, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnChange.Location = new System.Drawing.Point(895, 224);
+            this.BtnChange.Name = "BtnChange";
+            this.BtnChange.Size = new System.Drawing.Size(98, 39);
+            this.BtnChange.TabIndex = 1;
+            this.BtnChange.Text = "wijzigen";
+            this.BtnChange.UseVisualStyleBackColor = true;
+            this.BtnChange.Click += new System.EventHandler(this.BtnChange_Click);
             // 
             // OverzichtPatienten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnChange);
             this.Controls.Add(this.dataGridView1);
             this.Name = "OverzichtPatienten";
-            this.Size = new System.Drawing.Size(1057, 280);
+            this.Size = new System.Drawing.Size(1057, 510);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -123,6 +129,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Doctor;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonenumber;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnChange;
     }
 }

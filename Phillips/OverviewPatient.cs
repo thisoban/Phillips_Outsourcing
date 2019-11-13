@@ -12,6 +12,7 @@ namespace Phillips
 {
     public partial class OverviewPatient : Form
     {
+        OverzichtPatienten op = new OverzichtPatienten();
         public OverviewPatient()
         {
             InitializeComponent();
@@ -20,7 +21,11 @@ namespace Phillips
 
         private void OverviewPatient_Load(object sender, EventArgs e)
         {
-            panel1.Controls.Add(OverzichtPatienten.Instance);
+            panel1.Controls.Add(op);
+        }
+        public static void  SetPanel(UserControl uc)
+        {
+            panel1.Controls.Add(uc);
         }
     }
 }
