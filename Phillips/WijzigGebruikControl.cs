@@ -67,6 +67,7 @@ namespace Phillips
         }
         public WijzigGebruikControl(DataTable dat, int RowIndex)
         {
+            if (RowIndex == 0) return;
             IdTb.Text = dat.Rows[RowIndex][0].ToString();
             VoorNaamTb.Text = dat.Rows[RowIndex][1].ToString();
             AchterNaamTb.Text = dat.Rows[RowIndex][2].ToString();
