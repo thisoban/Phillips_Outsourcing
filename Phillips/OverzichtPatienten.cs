@@ -34,6 +34,7 @@ namespace Phillips
             dataGridView1.Rows.Add(row0);
             dataGridView1.Rows.Add(row1);
             dataGridView1.Rows.Add(row2);
+            dataGridView1.Rows.Add(row3);
 
         }
 
@@ -46,6 +47,23 @@ namespace Phillips
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selectedIndex = dataGridView1.CurrentCell.RowIndex;
+        }
+
+        private void BtnChange_Click(object sender, EventArgs e)
+        {
+          string text0 =  dataGridView1.SelectedCells[0].Value.ToString();
+          string text1 =  dataGridView1.SelectedCells[1].Value.ToString();
+          string text2 =  dataGridView1.SelectedCells[2].Value.ToString();
+          string text3 =  dataGridView1.SelectedCells[3].Value.ToString();
+          string text4 =  dataGridView1.SelectedCells[4].Value.ToString();
+         
+           
+           
+            Console.WriteLine(text0);
+            Console.WriteLine(text1);
+            Console.WriteLine(text2);
+            Console.WriteLine(text3);
+            Console.WriteLine(text4);
         }
     }
 }
