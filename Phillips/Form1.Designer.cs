@@ -28,31 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Panel = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            panel1 = new System.Windows.Forms.Panel();
+            SuspendLayout();
             // 
-            // Panel
+            // panel1
             // 
-            this.Panel.Location = new System.Drawing.Point(105, 61);
-            this.Panel.Name = "Panel";
-            this.Panel.Size = new System.Drawing.Size(487, 261);
-            this.Panel.TabIndex = 0;
+            panel1.Location = new System.Drawing.Point(0, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(535, 293);
+            panel1.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Panel);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(533, 292);
+            Controls.Add(panel1);
+            Margin = new System.Windows.Forms.Padding(2);
+            Name = "Form1";
+            Text = "Form1";
+            Load += new System.EventHandler(Form1_Load);
+            ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel Panel;
+        public static System.Windows.Forms.Panel panel1;
     }
 }
 

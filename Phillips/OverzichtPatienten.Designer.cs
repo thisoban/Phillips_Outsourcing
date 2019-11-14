@@ -49,20 +49,24 @@
             this.Doctor,
             this.email,
             this.phonenumber});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(990, 180);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(660, 117);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Patientid
             // 
             this.Patientid.HeaderText = "PatientID";
             this.Patientid.MinimumWidth = 8;
             this.Patientid.Name = "Patientid";
+            this.Patientid.ReadOnly = true;
             this.Patientid.Width = 150;
             // 
             // Naam
@@ -70,6 +74,7 @@
             this.Naam.HeaderText = "Naam";
             this.Naam.MinimumWidth = 8;
             this.Naam.Name = "Naam";
+            this.Naam.ReadOnly = true;
             this.Naam.Width = 150;
             // 
             // Doctor
@@ -77,6 +82,7 @@
             this.Doctor.HeaderText = "Dokter";
             this.Doctor.MinimumWidth = 8;
             this.Doctor.Name = "Doctor";
+            this.Doctor.ReadOnly = true;
             this.Doctor.Width = 150;
             // 
             // email
@@ -84,6 +90,7 @@
             this.email.HeaderText = "E-Mail";
             this.email.MinimumWidth = 8;
             this.email.Name = "email";
+            this.email.ReadOnly = true;
             this.email.Width = 150;
             // 
             // phonenumber
@@ -91,25 +98,29 @@
             this.phonenumber.HeaderText = "Tel. nr.";
             this.phonenumber.MinimumWidth = 8;
             this.phonenumber.Name = "phonenumber";
+            this.phonenumber.ReadOnly = true;
             this.phonenumber.Width = 150;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(767, 138);
+            this.button1.Location = new System.Drawing.Point(511, 90);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(50, 15);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // OverzichtPatienten
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OverzichtPatienten";
-            this.Size = new System.Drawing.Size(1057, 280);
+            this.Size = new System.Drawing.Size(705, 182);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

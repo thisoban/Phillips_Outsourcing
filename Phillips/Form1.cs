@@ -16,5 +16,11 @@ namespace Phillips
         {
             InitializeComponent();
         }
+        public static void SetPanel(UserControl uc) => panel1.Controls.Add(uc);
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panel1.Controls.Add(new OverzichtPatienten());
+        }
     }
 }
